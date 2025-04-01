@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intent App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 2em;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Intent App</h1>
+
+        <h2>Description</h2>
+        <p>
+            This is an app on an Android device that replaces the default home screen. It requires you to record a voice message or type an intent to open any application, except for those marked as favorites. This intent is transcribed to text and then analyzed by an LLM (Large Language Model) to determine if the reason provided is valid.
+        </p>
+        <p>
+            The goal is to introduce a moment of reflection before opening potentially distracting apps like social media or messengers. To use these apps, you need to state a genuine reason. For me, this approach has significantly decreased my screen time and freed up valuable time for more important activities.
+        </p>
+
+        <h2>Data Usage Policy</h2>
+        <p>
+            Your privacy is important. This application does not store any personal data that can be linked back to you as an individual.
+        </p>
+        <p>
+            The only data collected is:
+            <ul>
+                <li>The text derived from your voice or typed intents.</li>
+                <li>The names of the applications you request to open via an intent.</li>
+            </ul>
+            This information is used solely for the purpose of the LLM deciding whether to allow the app opening based on the stated intent. Specifically, OpenAI's Whisper model is used to transcribe voice recordings, and OpenAI's GPT-4o mini model is used to determine the validity of the intent. No other data is collected, and the collected data cannot be used to identify specific persons.
+        </p>
+    </div>
+</body>
+</html> 
